@@ -1,0 +1,79 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* BACKGROUND */
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* CONTENT */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 100px;
+  color: var(--white);
+}
+
+.content nav {
+  padding: 44px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content nav .logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.25px;
+}
+
+.content nav .navbar {
+  display: flex;
+  column-gap: 48px;
+  font-size: 18px;
+}
+
+.content nav a:hover {
+  color: #272f40;
+}
+
+/* Contact Button CTA */
+.contact-btn a {
+  background: #fff;
+  border-radius: 26px;
+  padding: 16px 24px;
+
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.contact-btn:hover a {
+  background: hsla(0, 0%, 100%, 0.329);
+  color: #fff !important;
+}
+
+/* Heading Text */
+.content h1 {
+  font-family: "Fraunces", serif;
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+/* Down Arrow */
+.content .icon:hover {
+  transform: translateY(-12px);
+  transition: transform 0.2s;
+}
