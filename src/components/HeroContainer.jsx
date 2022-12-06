@@ -1,41 +1,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./HeroContainer.css";
-import bgImage1 from "../assets/bg1.jpg";
-import bgImage2 from "../assets/bg2.jpg";
-import bgImage3 from "../assets/bg3.jpg";
 import downArrowIcon from "../assets/arrow-down.svg";
 
-function HeroContainer({ page }) {
+function HeroContainer({ page, image, title }) {
   return (
     <div className="hero-container container">
       <div className="bg container">
-        <img
-          src={
-            (page === "home" && bgImage1) ||
-            (page === "about" && bgImage3) ||
-            (page === "work" && bgImage2)
-          }
-          alt=""
-        />
+        <img src={image} alt="" />
       </div>
 
       <div className="content container">
         <nav>
-          <div class="logo">
+          <div className="logo">
             <Link to={"/"}>Anushka Chauhan</Link>
           </div>
-          <ul class="navbar">
-            <li>
+          <ul className="navbar">
+            <li className={page === "about" && "active"}>
               <Link to={"about"}>About</Link>
             </li>
-            <li>
+            <li className={page === "services" && "active"}>
               <Link to={"services"}>Services</Link>
             </li>
-            <li>
+            <li className={page === "work" && "active"}>
               <Link to={"work"}>Work</Link>
             </li>
-            <li class="contact-btn">
+            <li className="contact-btn">
               <a
                 href="https://www.linkedin.com/in/anushka-chauhan/"
                 target="_blank"
@@ -45,12 +35,8 @@ function HeroContainer({ page }) {
             </li>
           </ul>
         </nav>
-        <h1>
-          {(page === "home" && "My Best Projects") ||
-            (page === "about" && "About Me") ||
-            (page === "work" && "All Projects")}
-        </h1>
-        <a class="icon" href="#main">
+        <h1>{title}</h1>
+        <a className="icon" href="#main">
           <img src={downArrowIcon} alt="" />
         </a>
       </div>

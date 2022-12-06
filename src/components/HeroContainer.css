@@ -41,6 +41,12 @@
   font-size: 18px;
 }
 
+.content nav .navbar .active {
+  color: #272f40;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .content nav a:hover {
   color: #272f40;
 }
