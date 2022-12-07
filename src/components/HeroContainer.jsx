@@ -27,6 +27,7 @@ function HeroContainer({ page, image, title }) {
             </li>
             <li className="contact-btn">
               <a
+                className="cta"
                 href="https://www.linkedin.com/in/anushka-chauhan/"
                 target="_blank"
               >
@@ -35,7 +36,7 @@ function HeroContainer({ page, image, title }) {
             </li>
           </ul>
         </nav>
-        <h1>{title}</h1>
+        <h1 className="title">{title}</h1>
         <a className="icon" href="#main">
           <img src={downArrowIcon} alt="" />
         </a>

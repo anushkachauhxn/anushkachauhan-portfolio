@@ -44,9 +44,49 @@ button {
 
 ul {
   list-style: none;
+  display: flex;
 }
 
 img {
   width: 100%;
   object-fit: cover;
+}
+
+/* Text Classes */
+.title {
+  color: white;
+  font-family: "Fraunces", serif;
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.cta {
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.heading {
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.description {
+  color: var(--dark-grayish-blue);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.25px;
 }

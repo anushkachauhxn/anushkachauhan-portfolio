@@ -29,26 +29,9 @@
 
 .text-box h3 {
   padding-right: 142px;
-  color: var(--very-dark-desaturated-blue);
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 38px;
 }
 .text-box p {
   padding-right: 110px;
-  color: var(--dark-grayish-blue);
-  font-size: 18px;
-  line-height: 28px;
-}
-
-/* Links */
-.text-box a {
-  color: var(--very-dark-desaturated-blue);
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 /* Link Underlines */

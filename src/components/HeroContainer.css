@@ -29,14 +29,7 @@
   align-items: center;
 }
 
-.content nav .logo {
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -0.25px;
-}
-
 .content nav .navbar {
-  display: flex;
   column-gap: 48px;
   font-size: 18px;
 }
@@ -56,26 +49,11 @@
   background: #fff;
   border-radius: 26px;
   padding: 16px 24px;
-
-  color: var(--very-dark-desaturated-blue);
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 15px;
-  text-transform: uppercase;
 }
 
 .contact-btn:hover a {
   background: hsla(0, 0%, 100%, 0.329);
   color: #fff !important;
-}
-
-/* Heading Text */
-.content h1 {
-  font-family: "Fraunces", serif;
-  font-size: 54px;
-  font-weight: 900;
-  letter-spacing: 10px;
-  text-transform: uppercase;
 }
 
 /* Down Arrow */

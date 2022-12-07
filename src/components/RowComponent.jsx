@@ -11,9 +11,11 @@ function RowComponent({ image, title, description, link }) {
       </div>
 
       <div class="text-box">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <a href={link}>View Page</a>
+        <h3 className="heading">{title}</h3>
+        <p className="description">{description}</p>
+        <a className="cta" href={link}>
+          View Page
+        </a>
       </div>
     </div>
   );

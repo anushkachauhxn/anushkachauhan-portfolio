@@ -12,7 +12,7 @@ import image5 from "../assets/home/boat.jpg";
 function Home() {
   return (
     <div className="home">
-      <HeroContainer page="home" image={bgImage} title="Anushka" />
+      <HeroContainer page="home" image={bgImage} title="Anushka Chauhan" />
 
       <div className="main-container" id="main">
         <RowComponent
