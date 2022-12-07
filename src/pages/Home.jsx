@@ -2,13 +2,12 @@ import React from "react";
 import HeroContainer from "../components/HeroContainer";
 import RowComponent from "../components/RowComponent";
 import FooterComponent from "../components/FooterComponent";
-import "./Home.css";
 import bgImage from "../assets/home/orange.jpg";
 import image1 from "../assets/home/yellowcar.jpg";
 import image2 from "../assets/home/copexpolygon.jpeg";
-import image3 from "../assets/home/angrybirds.jpg";
+import image3 from "../assets/home/beachcar.jpg";
 import image4 from "../assets/home/artlady.jpg";
-import image5 from "../assets/home/rainbow.jpg";
+import image5 from "../assets/home/boat.jpg";
 
 function Home() {
   return (
