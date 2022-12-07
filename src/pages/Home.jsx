@@ -18,25 +18,31 @@ function Home() {
         <RowComponent
           image={image1}
           title="My Best Work"
-          description="All my best projects listed with the skills I used to build them!"
+          description="My best work listed here! Check out all the projects I've worked on. From challenging to tricky. From hair-pulling frustration to smug satisfaction."
           link=""
         />
         <RowComponent
           image={image2}
           title="My Last Internship"
-          description="My experience at my most recent internship at Cope Studio, Polygon. Exciting projects, demanding deadlines and overall growth and learning."
+          description="My experience at my most recent internship at Cope Studio, Polygon. Exciting projects, demanding deadlines and overall growth!"
           link=""
         />
         <RowComponent
           image={image3}
           title="My Qualifications"
-          description="Education. Skills. Cerifications. Testimonials."
+          description={
+            <p>
+              Skills I've gained. <br />
+              My Education Journey. <br />
+              Certifications I've achieved.
+            </p>
+          }
           link=""
         />
         <RowComponent
           image={image4}
           title="About Me"
-          description="Get to know 'Anushka Chauhan' outside of work. What makes me passionate? What makes me frustrated? My interests and hobbies. Get to know ME!"
+          description="Get to know 'Anushka Chauhan' outside of work. Things I'm passionate about. The causes I support. My interests and hobbies."
           link=""
         />
         <RowComponent

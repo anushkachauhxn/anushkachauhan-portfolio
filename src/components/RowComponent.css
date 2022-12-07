@@ -11,13 +11,6 @@
   width: 50%;
 }
 
-/* -- IMAGE BOXES -- */
-.img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* -- TEXT BOXES -- */
 .text-box {
   padding: 100px;
