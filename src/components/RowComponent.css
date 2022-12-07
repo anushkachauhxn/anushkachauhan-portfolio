@@ -64,3 +64,10 @@
 .text-box a:hover::before {
   border-bottom: 8px solid hsl(51, 100%, 50%);
 }
+
+.row-container:nth-child(even) .text-box a::before {
+  border-bottom: 8px solid #fe4e035d;
+}
+.row-container:nth-child(even) .text-box a:hover::before {
+  border-bottom: 8px solid #fe4d03;
+}
