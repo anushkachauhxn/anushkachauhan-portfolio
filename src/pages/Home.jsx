@@ -1,6 +1,7 @@
 import React from "react";
 import HeroContainer from "../components/HeroContainer";
 import RowComponent from "../components/RowComponent";
+import FooterComponent from "../components/FooterComponent";
 import "./Home.css";
 import bgImage from "../assets/home/orange.jpg";
 import image1 from "../assets/home/yellowcar.jpg";
@@ -46,6 +47,8 @@ function Home() {
           link=""
         />
       </div>
+
+      <FooterComponent />
     </div>
   );
 }

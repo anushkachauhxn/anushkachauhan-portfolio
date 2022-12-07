@@ -1,0 +1,36 @@
+.footer-container {
+  width: 100%;
+  padding: 70px;
+  background: #90d4c5;
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container a {
+  text-decoration: none;
+  color: #2b7464;
+}
+.footer-container a:hover {
+  color: #fff;
+}
+
+.footer-container .logo a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.25px;
+}
+
+.footer-container ul {
+  display: flex;
+  column-gap: 58px;
+}
+.footer-container ul.socials {
+  padding-top: 40px;
+  column-gap: 25px;
+  font-size: 24px;
+}
