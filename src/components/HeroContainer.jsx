@@ -17,13 +17,13 @@ function HeroContainer({ page, image, title }) {
           </div>
           <ul className="navbar">
             <li className={page === "about" && "active"}>
-              <Link to={"about"}>About</Link>
-            </li>
-            <li className={page === "services" && "active"}>
-              <Link to={"services"}>Services</Link>
+              <Link to={"/about"}>About</Link>
             </li>
             <li className={page === "work" && "active"}>
-              <Link to={"work"}>Work</Link>
+              <Link to={"/work"}>Work</Link>
+            </li>
+            <li className={page === "profile" && "active"}>
+              <Link to={"/profile"}>Profile</Link>
             </li>
             <li className="contact-btn">
               <a

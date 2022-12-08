@@ -7,7 +7,7 @@ import bgImage from "../assets/profile/orangesice.jpg";
 function Profile() {
   return (
     <div className="profile">
-      <HeroContainer page="home" image={bgImage} title="My Profile" />
+      <HeroContainer page="profile" image={bgImage} title="My Profile" />
 
       <div className="main-container" id="main"></div>
 
