@@ -8,6 +8,7 @@ import image2 from "../assets/home/copexpolygon.jpeg";
 import image3 from "../assets/home/beachcar.jpg";
 import image4 from "../assets/home/artlady.jpg";
 import image5 from "../assets/home/boat.jpg";
+import cv from "../assets/cv/AnushkaChauhan.pdf";
 
 function Home() {
   return (
@@ -49,7 +50,7 @@ function Home() {
           image={image5}
           title="View my CV"
           description="View and download my resume here!"
-          link=""
+          link={cv}
         />
       </div>
 
