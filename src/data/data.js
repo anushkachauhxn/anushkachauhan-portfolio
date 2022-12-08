@@ -23,7 +23,7 @@ export const data = {
       image: image2,
       title: "Sneakers Product Page",
       description:
-        "The product page for a sneakers product with cart functionality and lightbox view.",
+        "The product page for a sneakers product with cart functionality and lightbox view. Built completely using Javascript without the help of any libraries.",
       links: [
         "https://anushkachauhxn.github.io/frontend-mentor-projects/projects/14-ecommerce-product-page/",
         "https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/14-ecommerce-product-page",
@@ -33,7 +33,8 @@ export const data = {
       index: 3,
       image: image3,
       title: "Peppasauce Website Clone",
-      description: "",
+      description:
+        "A clone of the original peppasauce.love website with all the lovely animations. Responsive design. Animations: GSAP and ScrollMagic libraries.",
       links: [
         "https://peppasauce.netlify.app/",
         "https://github.com/anushkachauhxn/my-peppesauce-love",
@@ -42,8 +43,9 @@ export const data = {
     {
       index: 4,
       image: image4,
-      title: "Spotify Web Redesign",
-      description: "",
+      title: "Spotify Web Clone",
+      description:
+        "Spotify web clone. My own take on the mobile version of spotify web! Completely responsive at all device sizes.",
       links: [
         "https://spotify-clone-anushkachauhxn.netlify.app/",
         "https://github.com/anushkachauhxn/spotify-clone-react",
@@ -54,7 +56,7 @@ export const data = {
       image: image5,
       title: "IP Address Tracker",
       description:
-        "An application that tracks the physical address from an IP Address. Built using the IP Geolocation API and LeafletJS - A JavaScript library for interactive maps.",
+        "An application that tracks the physical address from an IP Address. Built using the IP Geolocation API and LeafletJS (a library for interactive maps).",
       links: [
         "https://anushkachauhxn.github.io/frontend-mentor-projects/projects/8-ip-address-tracker/",
         "https://github.com/anushkachauhxn/frontend-mentor-projects/tree/main/projects/8-ip-address-tracker",
