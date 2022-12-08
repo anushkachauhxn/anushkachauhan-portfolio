@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./HeroContainer.css";
+import "./HeroComponent.css";
 import downArrowIcon from "../assets/arrow-down.svg";
 
-function HeroContainer({ page, image, title }) {
+function HeroComponent({ page, image, title }) {
   return (
     <div className="hero-container container">
       <div className="bg container">
@@ -15,6 +15,7 @@ function HeroContainer({ page, image, title }) {
           <div className="logo">
             <Link to={"/"}>Anushka Chauhan</Link>
           </div>
+
           <ul className="navbar">
             <li className={page === "about" && "active"}>
               <Link to={"/about"}>About</Link>
@@ -36,6 +37,7 @@ function HeroContainer({ page, image, title }) {
             </li>
           </ul>
         </nav>
+
         <h1 className="title">{title}</h1>
         <a className="icon" href="#main">
           <img src={downArrowIcon} alt="" />
@@ -45,4 +47,4 @@ function HeroContainer({ page, image, title }) {
   );
 }
 
-export default HeroContainer;
+export default HeroComponent;

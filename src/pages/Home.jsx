@@ -1,5 +1,5 @@
 import React from "react";
-import HeroContainer from "../components/HeroContainer";
+import HeroComponent from "../components/HeroComponent";
 import RowComponent from "../components/RowComponent";
 import FooterComponent from "../components/FooterComponent";
 import bgImage from "../assets/home/orange.jpg";
@@ -13,7 +13,7 @@ import cv from "../assets/cv/AnushkaChauhan.pdf";
 function Home() {
   return (
     <div className="home">
-      <HeroContainer page="home" image={bgImage} title="Anushka Chauhan" />
+      <HeroComponent page="home" image={bgImage} title="Anushka Chauhan" />
 
       <div className="main-container" id="main">
         <RowComponent

@@ -1,13 +1,13 @@
 import React from "react";
-import HeroContainer from "../components/HeroContainer";
+import HeroComponent from "../components/HeroComponent";
 import RowComponent from "../components/RowComponent";
 import FooterComponent from "../components/FooterComponent";
-import bgImage from "../assets/profile/orangesice.jpg";
+import bgImage from "../assets/profile/iceoranges.jpg";
 
 function Profile() {
   return (
     <div className="profile">
-      <HeroContainer page="profile" image={bgImage} title="My Profile" />
+      <HeroComponent page="profile" image={bgImage} title="My Profile" />
 
       <div className="main-container" id="main"></div>
 

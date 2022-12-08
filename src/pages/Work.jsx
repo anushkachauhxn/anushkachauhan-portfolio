@@ -1,11 +1,17 @@
 import React from "react";
-import HeroContainer from "../components/HeroContainer";
-import bgImage3 from "../assets/bg3.jpg";
+import HeroComponent from "../components/HeroComponent";
+import RowComponent from "../components/RowComponent";
+import FooterComponent from "../components/FooterComponent";
+import bgImage from "../assets/work/bananaslices.jpg";
 
 function Work() {
   return (
     <div className="work">
-      <HeroContainer page="work" image={bgImage3} title="All Works" />
+      <HeroComponent page="work" image={bgImage} title="My Best Works" />
+
+      <div className="main-container" id="main"></div>
+
+      <FooterComponent />
     </div>
   );
 }

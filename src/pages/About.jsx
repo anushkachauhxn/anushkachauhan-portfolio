@@ -1,11 +1,17 @@
 import React from "react";
-import HeroContainer from "../components/HeroContainer";
-import bgImage2 from "../assets/bg2.jpg";
+import HeroComponent from "../components/HeroComponent";
+import RowComponent from "../components/RowComponent";
+import FooterComponent from "../components/FooterComponent";
+import bgImage from "../assets/about/chilli.jpg";
 
 function About() {
   return (
     <div className="about">
-      <HeroContainer page="about" image={bgImage2} title="About me" />
+      <HeroComponent page="about" image={bgImage} title="About me" />
+
+      <div className="main-container" id="main"></div>
+
+      <FooterComponent />
     </div>
   );
 }
