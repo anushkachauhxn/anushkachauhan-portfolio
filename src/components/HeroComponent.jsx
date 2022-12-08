@@ -17,13 +17,13 @@ function HeroComponent({ page, image, title }) {
           </div>
 
           <ul className="navbar">
-            <li className={page === "about" && "active"}>
+            <li className={page === "about" ? "active" : undefined}>
               <Link to={"/about"}>About</Link>
             </li>
-            <li className={page === "work" && "active"}>
+            <li className={page === "work" ? "active" : undefined}>
               <Link to={"/work"}>Work</Link>
             </li>
-            <li className={page === "profile" && "active"}>
+            <li className={page === "profile" ? "active" : undefined}>
               <Link to={"/profile"}>Profile</Link>
             </li>
             <li className="contact-btn">
