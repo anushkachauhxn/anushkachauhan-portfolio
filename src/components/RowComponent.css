@@ -41,9 +41,22 @@
   border-bottom: 8px solid hsl(51, 100%, 50%);
 }
 
-.row-container:nth-child(even) .text-box a::before {
-  border-bottom: 8px solid #fe4e035d;
+/* Home Page: alternate colors */
+.home .row-container:nth-child(even) .text-box a::before {
+  border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
 }
-.row-container:nth-child(even) .text-box a:hover::before {
-  border-bottom: 8px solid #fe4d03;
+.home .row-container:nth-child(even) .text-box a:hover::before {
+  border-bottom: 8px solid hsl(18, 99%, 50%);
+}
+
+/* Work Page: two links with different colors */
+.text-box .links {
+  display: flex;
+  column-gap: 30px;
+}
+.text-box .links a:nth-child(2):before {
+  border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
+}
+.text-box .links a:hover:nth-child(2):before {
+  border-bottom: 8px solid hsla(18, 99%, 50%, 1);
 }
