@@ -4,9 +4,10 @@ import "./RowComponent.css";
 function RowComponent({
   page,
   image,
+  subtitle = null,
   title,
   description,
-  links,
+  links = [],
   newTab = false,
 }) {
   return (
@@ -18,6 +19,7 @@ function RowComponent({
       </div>
 
       <div className="text-box">
+        {subtitle && <p className="subheading cta">{subtitle}</p>}
         <h3 className="heading">{title}</h3>
         <p className="description">{description}</p>
 

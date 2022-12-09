@@ -20,15 +20,17 @@
   justify-content: center;
 }
 
-.text-box h3 {
-  padding-right: 142px;
+.text-box .subheading {
+  margin-bottom: -25px;
 }
-.text-box p {
-  padding-right: 110px;
+
+.text-box ul {
+  display: block;
+  list-style: disc;
 }
 
 /* Link Underlines */
-.text-box a::before {
+.text-box .cta::before {
   content: "";
   display: block;
   margin-left: -4.5px;
@@ -37,15 +39,15 @@
   border-radius: 4px;
   border-bottom: 8px solid hsla(51, 100%, 50%, 0.365);
 }
+.row-container:nth-child(even) .text-box .cta::before {
+  border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
+}
+
+/* Hover for link tags */
 .text-box a:hover::before {
   border-bottom: 8px solid hsl(51, 100%, 50%);
 }
-
-/* Home Page: alternate colors */
-.home .row-container:nth-child(even) .text-box a::before {
-  border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
-}
-.home .row-container:nth-child(even) .text-box a:hover::before {
+.row-container:nth-child(even) .text-box a:hover::before {
   border-bottom: 8px solid hsl(18, 99%, 50%);
 }
 
@@ -54,9 +56,17 @@
   display: flex;
   column-gap: 30px;
 }
-.text-box .links a:nth-child(2):before {
+.text-box .links .cta:nth-child(1):before {
+  border-bottom: 8px solid hsla(51, 100%, 50%, 0.365);
+}
+.text-box .links .cta:nth-child(2):before {
   border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
 }
-.text-box .links a:hover:nth-child(2):before {
-  border-bottom: 8px solid hsla(18, 99%, 50%, 1);
+
+/* Hover for link tags */
+.text-box .links .cta:hover:nth-child(1):before {
+  border-bottom: 8px solid hsl(51, 100%, 50%);
+}
+.text-box .links .cta:hover:nth-child(2):before {
+  border-bottom: 8px solid hsl(18, 99%, 50%);
 }
