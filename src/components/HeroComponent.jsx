@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button } from "@mui/material";
 import "./HeroComponent.scss";
 import downArrowIcon from "../assets/arrow-down.svg";
 
@@ -36,6 +37,13 @@ function HeroComponent({ page, image, title }) {
               </a>
             </li>
           </ul>
+
+          <div className="mobile-navbar">
+            <Button className="menu-btn">
+              <ion-icon className="menu" name="menu"></ion-icon>
+              <ion-icon className="close" name="close"></ion-icon>
+            </Button>
+          </div>
         </nav>
 
         <h1 className="title">{title}</h1>

@@ -66,3 +66,37 @@
   background: hsla(0, 0%, 100%, 0.329);
   color: #fff !important;
 }
+
+/* MEDIA QUERIES */
+.mobile-navbar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block;
+    .menu-btn {
+      ion-icon {
+        color: white;
+        font-size: 24px;
+      }
+      ion-icon[name="close"] {
+        display: none;
+      }
+    }
+
+    &.active {
+      .menu-btn {
+        ion-icon[name="menu"] {
+          display: none;
+        }
+        ion-icon[name="close"] {
+          display: block;
+        }
+      }
+    }
+  }
+}
