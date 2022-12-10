@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
+import { Button, Modal } from "@mui/material";
 import "./HeroComponent.scss";
 import downArrowIcon from "../assets/arrow-down.svg";
+import MenuModal from "./MenuModal";
 
 function HeroComponent({ page, image, title }) {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="hero-container container">
       <div className="background container">
@@ -39,10 +42,21 @@ function HeroComponent({ page, image, title }) {
           </ul>
 
           <div className="mobile-navbar">
-            <Button className="menu-btn">
-              <ion-icon className="menu" name="menu"></ion-icon>
-              <ion-icon className="close" name="close"></ion-icon>
+            <Button className="menu-btn" onClick={() => setOpenModal(true)}>
+              {openModal ? (
+                <ion-icon className="close" name="close"></ion-icon>
+              ) : (
+                <ion-icon className="menu" name="menu"></ion-icon>
+              )}
             </Button>
+
+            <Modal
+              className="menu-modal"
+              open={openModal}
+              onClose={() => setOpenModal(false)}
+            >
+              <MenuModal />
+            </Modal>
           </div>
         </nav>
 
