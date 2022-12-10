@@ -3,100 +3,108 @@
   width: 100%;
   height: 460px;
   display: flex;
-}
-.row-container:nth-child(odd) {
-  flex-direction: row-reverse;
-}
-.row-container > div {
-  width: 50%;
-}
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
 
-/* -- TEXT BOXES -- */
-.text-box {
-  padding: 100px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 48px;
-  justify-content: center;
-}
+  > div {
+    width: 50%;
+  }
 
-.text-box .subheading {
-  margin-bottom: -25px;
-}
+  .text-box {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 48px;
 
-.text-box ul {
-  display: block;
-  list-style: disc;
-}
+    .subheading {
+      margin-bottom: -25px;
+    }
 
-/* Link Underlines */
-.text-box .cta::before {
-  content: "";
-  display: block;
-  margin-left: -4.5px;
-  margin-bottom: -18px;
-  width: 84px;
-  border-radius: 4px;
-  border-bottom: 8px solid hsla(51, 100%, 50%, 0.365);
-}
-.row-container:nth-child(even) .text-box .cta::before {
-  border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
-}
+    ul {
+      display: block;
+      list-style: disc;
+    }
 
-/* Hover for link tags */
-.text-box a:hover::before {
-  border-bottom: 8px solid hsl(51, 100%, 50%);
-}
-.row-container:nth-child(even) .text-box a:hover::before {
-  border-bottom: 8px solid hsl(18, 99%, 50%);
-}
+    /* CTA Link Underline */
+    .cta::before {
+      content: "";
+      display: block;
+      margin-left: -4.5px;
+      margin-bottom: -18px;
+      width: 84px;
+      border-radius: 4px;
+      border-bottom: 8px solid hsla(51, 100%, 50%, 0.365);
+    }
+    a:hover::before {
+      border-bottom: 8px solid hsl(51, 100%, 50%);
+    }
 
-/* Work Page: two links with different colors */
-.text-box .links {
-  display: flex;
-  column-gap: 30px;
-}
-.text-box .links .cta:nth-child(1):before {
-  border-bottom: 8px solid hsla(51, 100%, 50%, 0.365);
-}
-.text-box .links .cta:nth-child(2):before {
-  border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
-}
+    /* Work Page: two links with different colors */
+    .links {
+      display: flex;
+      column-gap: 54px;
+      .cta {
+        &:nth-child(1):before {
+          border-bottom: 8px solid hsla(51, 100%, 50%, 0.365);
+        }
+        &:nth-child(2):before {
+          border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
+        }
 
-/* Hover for link tags */
-.text-box .links .cta:hover:nth-child(1):before {
-  border-bottom: 8px solid hsl(51, 100%, 50%);
-}
-.text-box .links .cta:hover:nth-child(2):before {
-  border-bottom: 8px solid hsl(18, 99%, 50%);
+        &:hover {
+          &:nth-child(1):before {
+            border-bottom: 8px solid hsl(51, 100%, 50%);
+          }
+          &:nth-child(2):before {
+            border-bottom: 8px solid hsl(18, 99%, 50%);
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    .text-box {
+      .cta::before {
+        border-bottom: 8px solid hsla(18, 99%, 50%, 0.365);
+      }
+      a:hover::before {
+        border-bottom: 8px solid hsl(18, 99%, 50%);
+      }
+    }
+  }
 }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 900px) {
   .row-container {
     height: 360px;
-  }
-  .text-box {
-    padding: 54px;
-    row-gap: 36px;
-  }
-  .text-box .links {
-    justify-content: space-between;
-    margin-right: 20px;
+    .text-box {
+      padding: 54px;
+      row-gap: 36px;
+      .links {
+        justify-content: space-between;
+        margin-right: 20px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 540px) {
-  .row-container,
-  .row-container:nth-child(odd) {
+  .row-container {
     height: unset;
     flex-direction: column;
-  }
-  .row-container > div {
-    width: 100%;
-    height: 300px;
-  }
-  .text-box {
-    row-gap: 32px;
+    &:nth-child(odd) {
+      flex-direction: column;
+    }
+    > div {
+      width: 100%;
+      height: 300px;
+    }
+    .text-box {
+      row-gap: 32px;
+    }
   }
 }
