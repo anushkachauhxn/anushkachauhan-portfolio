@@ -27,3 +27,20 @@
   column-gap: 25px;
   font-size: 24px;
 }
+
+@media screen and (max-height: 900px) {
+  .footer-container {
+    padding: 60px;
+  }
+  .footer-container .logo {
+    font-size: 18px;
+  }
+  .footer-container .links {
+    column-gap: 50px;
+    font-size: 14px;
+  }
+  .footer-container .socials {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+}
