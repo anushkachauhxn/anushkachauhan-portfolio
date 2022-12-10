@@ -62,7 +62,17 @@ img {
   letter-spacing: 10px;
   text-transform: uppercase;
 }
-
+.heading {
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Fraunces", serif;
+  font-size: 38px;
+  font-weight: 900;
+}
+.description {
+  color: var(--dark-grayish-blue);
+  font-size: 18px;
+  line-height: 28px;
+}
 .cta {
   color: var(--very-dark-desaturated-blue);
   font-family: "Fraunces", serif;
@@ -71,23 +81,36 @@ img {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
-.heading {
-  color: var(--very-dark-desaturated-blue);
-  font-family: "Fraunces", serif;
-  font-size: 38px;
-  font-weight: 900;
-}
-
-.description {
-  color: var(--dark-grayish-blue);
-  font-size: 18px;
-  line-height: 28px;
-}
-
 .logo {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 800;
   letter-spacing: -0.25px;
+}
+.navbar {
+  font-size: 18px;
+}
+
+@media screen and (max-height: 900px) {
+  .title {
+    font-size: 38px;
+    letter-spacing: 8px;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .description {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .cta {
+    font-size: 14px;
+  }
+  .logo {
+    font-size: 18px;
+    letter-spacing: 0.25px;
+  }
+  .navbar {
+    font-size: 16px;
+  }
 }
