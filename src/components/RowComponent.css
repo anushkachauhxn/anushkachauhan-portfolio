@@ -72,7 +72,7 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-height: 900px) {
+@media screen and (max-width: 900px) {
   .row-container {
     height: 360px;
   }

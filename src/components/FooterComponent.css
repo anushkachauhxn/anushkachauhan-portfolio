@@ -28,7 +28,7 @@
   font-size: 24px;
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-width: 900px) {
   .footer-container {
     padding: 60px;
   }

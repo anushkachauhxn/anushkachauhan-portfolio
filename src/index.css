@@ -91,7 +91,7 @@ img {
   font-size: 18px;
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-width: 900px) {
   .title {
     font-size: 38px;
     letter-spacing: 8px;
