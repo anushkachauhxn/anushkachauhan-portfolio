@@ -1,16 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Playfair+Display:wght@700&family=Poppins:wght@500;600;800&display=swap");
 
-:root {
-  --soft-red: hsl(7, 99%, 70%);
-  --yellow: hsl(51, 100%, 49%);
-  --dark-desaturated-cyan: hsl(167, 40%, 24%);
-  --dark-blue: hsl(198, 62%, 26%);
-  --dark-moderate-cyan: hsl(168, 34%, 41%);
-  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-  --very-dark-grayish-blue: #5a636c;
-  --dark-grayish-blue: hsl(232, 10%, 55%);
-  --grayish-blue: hsl(210, 4%, 67%);
-  --white: hsl(0, 0%, 100%);
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark-desaturated-cyan: hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$dark-moderate-cyan: hsl(168, 34%, 41%);
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: #5a636c;
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+
+@mixin flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -22,18 +31,15 @@
 
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col();
   overflow-x: hidden;
 }
 
+/* General Styles */
 a {
   text-decoration: none;
   color: inherit;
 }
-
 button {
   border: none;
   outline: none;
@@ -41,12 +47,10 @@ button {
   color: inherit;
   font-size: inherit;
 }
-
 ul {
   list-style: none;
   display: flex;
 }
-
 img {
   width: 100%;
   height: 100%;
@@ -63,18 +67,18 @@ img {
   text-transform: uppercase;
 }
 .heading {
-  color: var(--very-dark-desaturated-blue);
+  color: $very-dark-desaturated-blue;
   font-family: "Fraunces", serif;
   font-size: 38px;
   font-weight: 900;
 }
 .description {
-  color: var(--dark-grayish-blue);
+  color: $dark-grayish-blue;
   font-size: 18px;
   line-height: 28px;
 }
 .cta {
-  color: var(--very-dark-desaturated-blue);
+  color: $very-dark-desaturated-blue;
   font-family: "Fraunces", serif;
   font-size: 15px;
   font-weight: 900;

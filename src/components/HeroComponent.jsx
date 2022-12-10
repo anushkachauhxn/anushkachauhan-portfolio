@@ -6,7 +6,7 @@ import downArrowIcon from "../assets/arrow-down.svg";
 function HeroComponent({ page, image, title }) {
   return (
     <div className="hero-container container">
-      <div className="bg container">
+      <div className="background container">
         <img src={image} alt="" />
       </div>
 
