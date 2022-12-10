@@ -91,6 +91,7 @@ img {
   font-size: 18px;
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 900px) {
   .title {
     font-size: 38px;
@@ -112,5 +113,22 @@ img {
   }
   .navbar {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .cta {
+    font-size: 13px;
   }
 }
