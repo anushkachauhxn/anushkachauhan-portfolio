@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Profile from "./pages/Profile";
-import "./index.css";
+import "./index.scss";
 
 const router = createBrowserRouter([
   {

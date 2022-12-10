@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./HeroComponent.css";
+import "./HeroComponent.scss";
 import downArrowIcon from "../assets/arrow-down.svg";
 
 function HeroComponent({ page, image, title }) {

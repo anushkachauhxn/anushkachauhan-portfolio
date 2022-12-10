@@ -1,5 +1,5 @@
 import React from "react";
-import "./RowComponent.css";
+import "./RowComponent.scss";
 
 function RowComponent({
   page,
