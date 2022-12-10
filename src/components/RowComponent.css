@@ -70,3 +70,18 @@
 .text-box .links .cta:hover:nth-child(2):before {
   border-bottom: 8px solid hsl(18, 99%, 50%);
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-height: 900px) {
+  .row-container {
+    height: 360px;
+  }
+  .text-box {
+    padding: 54px;
+    row-gap: 36px;
+  }
+  .text-box .links {
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+}
