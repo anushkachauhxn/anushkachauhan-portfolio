@@ -42,6 +42,13 @@
           text-decoration-thickness: 2px;
         }
       }
+
+      .mobile-navbar {
+        .menu-btn ion-icon {
+          color: white;
+          font-size: 24px;
+        }
+      }
     }
 
     /* Down Arrow */
@@ -67,6 +74,21 @@
   color: #fff !important;
 }
 
+/* Menu Modal */
+.menu-modal {
+  @include flex-row-sb();
+  .navbar {
+    padding: 48px 56px;
+    @include flex-col();
+    row-gap: 36px;
+    background: hsla(0, 0%, 100%, 0.85);
+    border-radius: 12px;
+    .contact-btn a {
+      background: hsla(51, 100%, 49%, 0.5);
+    }
+  }
+}
+
 /* MEDIA QUERIES */
 .mobile-navbar {
   display: none;
@@ -76,13 +98,8 @@
   .navbar {
     display: none;
   }
-  .mobile-navbar {
-    display: block;
-    .menu-btn {
-      ion-icon {
-        color: white;
-        font-size: 24px;
-      }
-    }
+  .mobile-navbar,
+  .menu-modal .navbar {
+    display: flex;
   }
 }

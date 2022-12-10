@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Button, Modal } from "@mui/material";
 import "./HeroComponent.scss";
 import downArrowIcon from "../assets/arrow-down.svg";
-import MenuModal from "./MenuModal";
 
 function HeroComponent({ page, image, title }) {
   const [openModal, setOpenModal] = useState(false);
@@ -55,7 +54,26 @@ function HeroComponent({ page, image, title }) {
               open={openModal}
               onClose={() => setOpenModal(false)}
             >
-              <MenuModal />
+              <ul className="navbar">
+                <li className={page === "about" ? "active" : undefined}>
+                  <Link to={"/about"}>About</Link>
+                </li>
+                <li className={page === "work" ? "active" : undefined}>
+                  <Link to={"/work"}>Work</Link>
+                </li>
+                <li className={page === "profile" ? "active" : undefined}>
+                  <Link to={"/profile"}>Profile</Link>
+                </li>
+                <li className="contact-btn">
+                  <a
+                    className="cta"
+                    href="https://www.linkedin.com/in/anushka-chauhan/"
+                    target="_blank"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
             </Modal>
           </div>
         </nav>
