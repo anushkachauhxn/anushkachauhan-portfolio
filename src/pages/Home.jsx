@@ -28,7 +28,9 @@ function Home() {
           image={image2}
           title="My Last Internship"
           description="My experience at my most recent internship at Cope Studio, Polygon. Exciting projects, demanding deadlines and overall growth!"
-          links={["https://medium.com/@anushkachauhan"]}
+          links={[
+            "https://medium.com/@anushkachauhan/my-internship-at-cope-studio-polygon-f8b23f2f2df6",
+          ]}
           newTab={true}
         />
         <RowComponent
